@@ -62,10 +62,85 @@ calculaArea(2,3)*/
 imprimirOlaMundo(); //chamando a função */
 
 //aula 6 ex 2
-function OlaNome (nome)
+/*function OlaNome (nome)
 {
-console.log(`Olá ${nome}`) // `${}` substitui fecha aspas e vírgula
+console.log(`Olá ${nome}`) // `${}` substitui fecha aspas e vírgula entre texto e variáveis
 }
 OlaNome("Cris");
 OlaNome("Collet");
-OlaNome("Antônio");
+OlaNome("Antônio");*/
+
+/*const a=1
+function imprimeVariavel () 
+    {
+    const b=2
+    console.log('Variável a', a);
+    console.log('Variável b', b);
+    }
+imprimeVariavel();
+console.log('Variável a', a);
+console.log('Variável b', b);*/
+
+/*function calculaArea(altura,largura){
+    const area=altura*largura
+    return area
+}
+//atribui retorno a uma variável
+const areaCalculada=calculaArea(2,3);
+//imprime retorno no console
+console.log(calculaArea(2,3));*/
+
+//aula 6 ex3
+/*function calcSoma(num1,num2){
+    const soma=num1+num2
+    return soma //ou susbstituir essas 2 linhas por return num1+num2
+}
+const numSomados=calcSoma(0,0);
+console.log(calcSoma(4,5));*/
+
+//aula 6 ex 4
+//teste 1 sem função funcionou
+/*var array=[11,12,13,14,15,16];
+var array2=[array[0],array[array.length-1]]
+console.log(array2);
+var div1=(array2[0])/2
+var div2=(array2[1])/2
+
+console.log(div2);
+console.log(div1);*/
+
+//teste 2 com função
+function divArray (div2,div1){
+var array=[11,12,13,14,15,16];
+var array2=[array[0],array[array.length-1]]
+//console.log(array2);
+var div1=(array2[0])/2;
+var div2=(array2[1])/2;
+return [div2,div1];
+}
+console.log(divArray());
+
+//prof
+/*function recebeArray(arrayDeNumeros=[]){
+    return[(arrayDeNumeros.lenght)/2 , (arrayDeNumeros[0])/2];
+
+}
+console.log(recebeArray([1,2,3,4,5,6,7,8,9]));*/
+
+//aula 6 ex 5.1
+/*
+const OlaNome=function(nome){
+    console.log(`Olá ${nome}`)   
+}
+const helWo=OlaNome("Cristian");
+OlaNome("Collet");*/
+
+//aula 6 ex5.2
+
+/*const calcSoma=(num1,num2)=>{
+    const soma=num1+num2
+    return soma
+}
+//const numSomados=calcSoma(0,0);
+console.log(calcSoma(4,5));*/
+
