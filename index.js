@@ -13,8 +13,9 @@ const fraseI = fraseMaiuscula.replaceAll("O","I"); //console.log(frase2.replaceA
 console.log(fraseI);
 console.log(fraseI.length);*/
 
-const listaDeCompras = ["Abacate","Banana","Tomate"]
+/*const listaDeCompras = ["Abacate","Banana","Tomate"]
 const segundoItem = listaDeCompras[2] // "Tomate"
+*/
 
 //aula 5 ex 2
 /*var i=prompt("Escolha uma raça entre 0 e 4");
@@ -110,7 +111,7 @@ console.log(div2);
 console.log(div1);*/
 
 //teste 2 com função
-function divArray (div2,div1){
+/*function divArray (div2,div1){
 var array=[11,12,13,14,15,16];
 var array2=[array[0],array[array.length-1]]
 //console.log(array2);
@@ -118,7 +119,7 @@ var div1=(array2[0])/2;
 var div2=(array2[1])/2;
 return [div2,div1];
 }
-console.log(divArray());
+console.log(divArray());*/
 
 //prof
 /*function recebeArray(arrayDeNumeros=[]){
@@ -144,3 +145,117 @@ OlaNome("Collet");*/
 //const numSomados=calcSoma(0,0);
 console.log(calcSoma(4,5));*/
 
+
+//Alt Shift A para comentar um trecho selecionado
+//Aula 7 OBJETOS
+/*const professor ={
+    nome:'Vitor',
+    idade:27,
+    tarefas:['Dar aula','Responder dúvidas'],
+    contarPiada:function(){
+        console.log('É pa vê ou pa comê?')
+    }
+}
+console.log(professor.idade); //notação de ponto (mais comum)
+console.log(professor['nome']); //Vitor (notação de colchete)
+professor.nome='Cristian';
+console.log(professor['nome']); //Cristian
+*/
+
+//aula 7 ex 1
+/* var filme={
+    nome: 'Jurassic Park',
+    ano:1993,
+    diretor:'Steven Spielberg',
+    elenco: ['Sam Neil','Laura Dern','Jeff Goldblum'],
+    visto: true
+}
+console.log('Filme: ',filme.nome);
+console.log('Lançamento: ',filme.ano);
+console.log('Diretor: ',filme.diretor); //notação de ponto ou...
+console.log('Elenco: ',filme['elenco']); //...notação de colchete
+console.log('Assistido? ',filme['visto']); 
+//aula 7 ex 3
+filme.personagens=['Alan Grant','Ellie Sattler','Ian Malcom'];
+console.log('Elenco e personagens:')
+console.log(filme.elenco[0],'-',filme.personagens[0]); //ctrl D para selecionar o próximo índice igual [0] ao mesmo tempo
+console.log(filme.elenco[1],'-',filme.personagens[1]);
+console.log(filme.elenco[2],'-',filme.personagens[2]);
+filme.elenco[0]='Xuxa';
+console.log('Alteração: ',filme.elenco[0]);
+console.log(filme); */
+
+
+
+//aula 7 ex2
+/* var pessoa={
+    nome: 'Cristian',
+    idade:46,
+    genMus:'Heavy Metal'
+}
+console.log(`O nome da pessoa é ${pessoa.nome}, ele(a) tem ${pessoa.idade} anos e gosta muito de ${pessoa.genMus}.`); */
+
+/* const donoDoPet= //objeto dentro de objeto
+    {
+    nome: 'Vitor',
+    pet:
+        {
+        nomeDoPet:'Wanda',
+        raca:'Vira-lata',
+        idade:1
+        }
+    }
+console.log(donoDoPet.pet.nomeDoPet); */
+
+/* const curso={
+    nome:'Noturno Frontend',
+    linguagens:['JS','CSS','HTML'] //array dentro de objeto
+}
+console.log(curso.linguagens[0]);
+curso.numeroEstudantes=50; //adicionando numeroEstudantes ao curso 
+console.log(curso.numeroEstudantes);  */
+
+
+//Array de objetos (muito utilizado)
+/* const professores =[ //objetos dentro de um array
+    {nome:'Andrei',modulo:1},
+    {nome:'Vitor',modulo:2},
+    {nome:'Mina',modulo:3},
+    ]
+console.log(professores[1].nome); */ //Vitor
+
+//aula 7-espalhamento spread
+/* const usuario={
+    nome:'Prof',
+    idade:25,
+    email:'prof@senacrs.com.br',
+    cidade:'São Paulo'
+}
+console.log(usuario);
+const novoUsuario={ 
+    ...usuario, //criando um novo objeto a partir do anterior e alterando alguns dados
+    nome:'João',
+    idade:28
+}
+console.log(novoUsuario); */
+
+//aula 7 copiando array
+const listaDeNomes=['Mika','Paula','Vitor']
+const copiaListaDeNomes=[...listaDeNomes]
+console.log(copiaListaDeNomes);
+
+//aula 7 ex 4
+//aula 7 ex2 (cópia)
+var pessoa={
+    nome: 'Cristian',
+    idade:46,
+    genMus:'Heavy Metal'
+}
+console.log(`O nome da pessoa é ${pessoa.nome}, ele(a) tem ${pessoa.idade} anos e gosta muito de ${pessoa.genMus}.`); 
+
+funcao novaPessoa=
+            {
+              pessoa2=pessoa //ver spread acima
+              pessoa2.comidas=['Churasco','Pizza','Cheeseburguer']  
+              pessoa2.amigo //continuar...
+            }
