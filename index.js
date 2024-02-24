@@ -240,9 +240,9 @@ const novoUsuario={
 console.log(novoUsuario); */
 
 //aula 7 copiando array
-const listaDeNomes=['Mika','Paula','Vitor']
+/* const listaDeNomes=['Mika','Paula','Vitor']
 const copiaListaDeNomes=[...listaDeNomes]
-console.log(copiaListaDeNomes);
+console.log(copiaListaDeNomes); */
 
 //aula 7 ex 4
 //aula 7 ex2 (cópia)
@@ -251,11 +251,16 @@ var pessoa={
     idade:46,
     genMus:'Heavy Metal'
 }
-console.log(`O nome da pessoa é ${pessoa.nome}, ele(a) tem ${pessoa.idade} anos e gosta muito de ${pessoa.genMus}.`); 
+//console.log(`O nome da pessoa é ${pessoa.nome}, ele(a) tem ${pessoa.idade} anos e gosta muito de ${pessoa.genMus}.`); 
 
-funcao novaPessoa=
+function novaPessoa()
             {
-              pessoa2=pessoa //ver spread acima
-              pessoa2.comidas=['Churasco','Pizza','Cheeseburguer']  
-              pessoa2.amigo //continuar...
+              const pessoa2={...pessoa, 
+              comidas:['Churasco','Pizza','Cheeseburguer']  ,
+              amigo:{nomeAmigo:'Anselmo',idadeAmigo:40}
             }
+            console.log(`O nome da pessoa é ${pessoa2.nome} e suas comidas preferidas são ${pessoa2.comidas[0]}, ${pessoa2.comidas[1]} e ${pessoa2.comidas[2]}. Seu melhor amigo se chama ${pessoa2.amigo.nomeAmigo} e tem ${pessoa2.amigo.idadeAmigo} anos.`);   
+        }
+novaPessoa()
+
+//aula 8
