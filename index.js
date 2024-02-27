@@ -246,7 +246,7 @@ console.log(copiaListaDeNomes); */
 
 //aula 7 ex 4
 //aula 7 ex2 (cópia)
-var pessoa={
+/* var pessoa={
     nome: 'Cristian',
     idade:46,
     genMus:'Heavy Metal'
@@ -261,6 +261,188 @@ function novaPessoa()
             }
             console.log(`O nome da pessoa é ${pessoa2.nome} e suas comidas preferidas são ${pessoa2.comidas[0]}, ${pessoa2.comidas[1]} e ${pessoa2.comidas[2]}. Seu melhor amigo se chama ${pessoa2.amigo.nomeAmigo} e tem ${pessoa2.amigo.idadeAmigo} anos.`);   
         }
-novaPessoa()
+novaPessoa() */
 
-//aula 8
+//aula 8 (EM CASA)--------------------------------------------------------------------
+//aula 8 ex 1
+/* function compara (num1,num2){
+var num1=prompt("Digite o 1º número para comparação");
+var num2=prompt("Digite o 2º número para comparação");
+if(num1===num2){console.log('OS NÚMEROS SÃO IGUAIS!')};
+if(num1!==num2){console.log('OS NÚMEROS SÃO DIFERENTES!')};
+console.log(num1, 'e', num2) 
+}
+compara(); */
+
+//aula 8 ex1.1
+/* function cnh (){
+        var nome=prompt("Digite seu nome");
+    var idade=prompt("Digite sua idade");  
+    if(idade>=18){console.log(nome,', você PODE dirigir')};
+    if(idade<18){console.log(nome,', você NÃO pode dirigir!')};
+    
+}
+cnh()  */
+//chame a função dentro de um console.log ...???
+
+//aula 8 ex 2
+/* function compara (num1,num2){
+    var num1=prompt("Digite o 1º número para comparação");
+    var num2=prompt("Digite o 2º número para comparação");
+    if(num1===num2){console.log('OS NÚMEROS SÃO IGUAIS!')} //não pode ter ";" (ponto e vírgula) aqui entre o if e o else
+    else{console.log('OS NÚMEROS SÃO DIFERENTES!')};
+    console.log(num1, 'e', num2) 
+    }
+    compara(); */
+
+//aula 8 ex 3
+ /*    function compara (num1,num2){
+        var num1=prompt("Digite o 1º número para comparação");
+        var num2=prompt("Digite o 2º número para comparação");
+        
+        if(num1===num2){console.log('OS NÚMEROS SÃO IGUAIS!')} //não pode ter ";" (ponto e vírgula) aqui entre o if e o else
+        else if(num1>num2){console.log('O PRIMEIRO NÚMERO É MAIOR QUE O SEGUNDO NÚMERO!')}
+        else{console.log('O SEGUNDO NÚMERO É MAIOR QUE O PRIMEIRO NÚMERO!')};
+        console.log(num1, 'e', num2) 
+        }
+        compara(); */
+
+//aula 8 ex 4 (switch case)
+/* var pokemon=prompt('DIGITE O NOME DE UM POKEMON: Bulbasauro, Charmander ou Squirtle, PARA SABER O SEU TIPO:')
+switch (pokemon) {
+    case 'Bulbasauro':console.log('Planta e veneno') 
+    break
+    case 'Charmander':console.log('Fogo') 
+    break
+    case 'Squirtle':console.log('Água') 
+    break
+    default: console.log('Pokemon não encontrado')
+} */
+
+//aula 8 ex 5 (operadores lógicos)
+/* function faculdade (){
+var ensMed=prompt('Você concluiu o ensino médio? Digite S para sim ou N para não!');
+var idade=prompt('Qual é a sua idade?');
+var facul=prompt('Você está cursando alguma faculdade no momento? Digite S para sim ou N para não!');
+if(ensMed==='S' && idade>=18 && facul==='N'){console.log('Você PODE estudar nesta faculdade')}
+else{console.log('Você NÃO pode estudar nesta faculdade')}
+}
+faculdade(); */
+
+//AULA 8 EX COMPLEMENTAR 1 CALCULADORA SIMPLES
+/* function calculadora (){
+    var num1=prompt("Digite o 1º número");
+    var oper=prompt('Digite a operação:+ ou - ou * ou /')
+    var num2=prompt("Digite o 2º número"); 
+    var num1=Number(num1)
+    var num2=Number(num2)
+    var soma=num1+num2
+    var sub=num1-num2
+    var mult=num1*num2
+    var div=num1/num2
+    if(oper==='+') {console.log(soma)}
+    else if(oper==='-') {console.log(sub)}
+    else if(oper==='*') {console.log(mult)}
+    else if(oper==='/') {console.log(div)}
+    else{console.log('ERRO')}
+}
+calculadora() */
+
+//AULA 8 EX COMPLEMENTAR 2 MÉDIA DE NOTAS
+/* function calcularMedia(){
+    var notaGeo=prompt('Digite a nota de Geografia') 
+    notaGeo=Number(notaGeo);
+    var notaHist=prompt('Digite a nota de História') 
+    notaHist=Number(notaHist);
+    var notaMat=prompt('Digite a nota de Matemática') 
+    notaMat=Number(notaMat);
+    var notas=[notaGeo,notaHist,notaMat]
+    media=(notas[0]+notas[1]+notas[2])/notas.length
+
+    console.log('A média do aluno é ',media)
+}
+calcularMedia(); */
+
+//AULA 8 EX COMPLEMENTAR 3 VERIFICADOR DE PALÍNDROMOS
+/* function verifPalin() {
+    var palavra=prompt('Digite uma palavra para verificar se esta é um palíndromo');
+    console.log(palavra);
+    palavra = palavra.toLowerCase().replace(/\s/g, ''); //utilizando ChatGpt para solução
+    console.log(palavra);
+    var palInver = palavra.split('').reverse().join(''); //utilizando ChatGpt para solução
+    //var palInvInv=palInver.split('').reverse().join('');
+    console.log(palInver);
+    //console.log(palInvInv);
+    if(palavra===palInver){console.log(`A palavra ${palavra} é um palíndromo pois seu inverso é ${palInver}-`,true)}
+    else{console.log(`A palavra ${palavra} NÃO é um palíndromo pois seu inverso é ${palInver}-`,false)}
+    ///CONCLUIR!!!
+    
+}
+verifPalin()  */
+
+
+//aula 9 ex 1 NÃO CONSEGUI!!!!!!!!!!!!----------------------------------------------------------------------------
+/* var num=1
+var soma=0
+while (num!==0) {
+    num=prompt('Digite um número');
+    num1=Number(num);
+    soma=soma+num1;
+};
+console.log(num1);
+console.log(soma) ; */
+
+//for
+/* const numeros=[14,67,89,15,23]
+for (let i=0;i<5;i++){
+    const elemento=numeros[i]
+    console.log(elemento)
+} */
+
+//AULA 9 EX 2 também não funcionou!?--------------
+/* const array=[11,15,18,14,12,13]
+//var i=0
+//var numAt=0
+function DevMaiorNum(array)
+{
+    let maiorNum=0
+    for(let i=0;i<=array.lenght;i++)
+        {
+        let numAt=array[i]
+        if(numAt>=maiorNum) {maiorNum=numAt}
+        }
+console.log(`O maior número do array é ${maiorNum}`)
+}
+DevMaiorNum(array) */
+
+//aula 9 ex 2 usando ChatGPT
+/* function maiorNumero(array) {
+    // Verifique se o array está vazio
+    if (array.length === 0) {
+        return "O array está vazio.";
+    }
+    // Inicialize o maior número com o primeiro elemento do array
+    let maior = array[0];
+    // Percorra o array para encontrar o maior número
+    for (let i = 1; i < array.length; i++) {
+        if (array[i] > maior) {
+            maior = array[i];
+        }
+    }
+    return maior;
+}
+// Exemplo de uso:
+const numeros = [10, 5, 20, 8, 15];
+console.log("O maior número é:", maiorNumero(numeros)); // Saída: O maior número é: 20 */
+
+//for of
+/* const numeros=[14,67,89,15,23]
+for(let numero of numeros){console.log(numero)} */
+
+//aula 9 ex 2
+var array=['Olá','amigo,','como','você','está?']
+//for(let mens of array){console.log(mens)}
+for(let i=0;i<=array.length;i++){
+    var pal=array[i]
+    console.log(pal)
+}
