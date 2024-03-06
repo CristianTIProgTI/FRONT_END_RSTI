@@ -307,27 +307,104 @@ cnh()  */
         }
         compara(); */
 
-//aula 8 ex 4 (switch case)
+//aula 8 ex 4 (switch case) (ficou = vers prof)
 /* var pokemon=prompt('DIGITE O NOME DE UM POKEMON: Bulbasauro, Charmander ou Squirtle, PARA SABER O SEU TIPO:')
 switch (pokemon) {
-    case 'Bulbasauro':console.log('Planta e veneno') 
-    break
-    case 'Charmander':console.log('Fogo') 
-    break
-    case 'Squirtle':console.log('Água') 
-    break
-    default: console.log('Pokemon não encontrado')
+    case 'Bulbasauro':console.log('Planta e veneno') ;
+    break;
+    case 'Charmander':console.log('Fogo') ;
+    break;
+    case 'Squirtle':console.log('Água') ;
+    break;
+    default: console.log('Pokemon não encontrado');
 } */
 
-//aula 8 ex 5 (operadores lógicos)
+
+
+
+//consultar no github / gdbarros94 / repositories / RSTI-doisirmaos / index.js as resoluções das aulas anteriores...
+//... copiar, colar e comparar com as minhas
+
+
+
+
+//aula 8 ex 5 (operadores lógicos) //MINHA VERSÃO, ver a seguir a solução do prof (MELHOR!)
 /* function faculdade (){
-var ensMed=prompt('Você concluiu o ensino médio? Digite S para sim ou N para não!');
-var idade=prompt('Qual é a sua idade?');
+var ensMed=prompt('Você concluiu o ensino médio? Digite S para sim ou N para não!'); // Evitar prompt dentro de função
+var idade=prompt('Qual é a sua idade?'); //"passar variáveis como parâmetros" ver versão correta do prof
 var facul=prompt('Você está cursando alguma faculdade no momento? Digite S para sim ou N para não!');
 if(ensMed==='S' && idade>=18 && facul==='N'){console.log('Você PODE estudar nesta faculdade')}
 else{console.log('Você NÃO pode estudar nesta faculdade')}
 }
 faculdade(); */
+
+//prof fez de outra forma (esta tem um ERRO de lógica intencional do prof, ver a próxima versão)
+/* function podeEntrarNaFaculdade (ensinoMedio, idade, faculdade){
+    if(idade>=18){
+        if(ensinoMedio==='sim'){
+            if(faculdade !=='sim'){
+                return 'Você PODE entrar na faculdade';
+            }
+        }
+    }
+    else{return 'Você NÃO pode entrar na faculdade';}
+}
+console.log(
+    podeEntrarNaFaculdade(
+        prompt('Você concluiu o ensino médio?'),
+        Number(prompt('Qual sua idade?')),
+        prompt('Você já estuda em uma faculdade?')
+    )
+); */
+
+//segunda do professor funcionando CORRETAMENTE!!!!!!!!!!!!!!!!!!!!!!!!!!!!.......................................
+/* function podeEntrarNaFaculdade (ensinoMedio, idade, faculdade) //parâmetros  da função entre parentesis ()...
+//...para não precisar criar as variáveis depois dentro da função
+//estas 3 var só existem dentro desta função
+{ 
+if(ensinoMedio==='sim'|| ensinoMedio==='Sim')
+{ensinoMedio=true;}else{ensinoMedio=false}
+
+if(faculdade==='sim'|| faculdade==='Sim')
+{faculdade=true;}else{faculdade=false}
+
+if(idade>=18 && ensinoMedio && !faculdade){
+    return 'Você PODE entrar na faculdade';
+}
+else{return 'Você NÃO pode entrar na faculdade';}
+} 
+console.log(
+    podeEntrarNaFaculdade( //função dentro de console.log
+        prompt('Você concluiu o ensino médio?'), //prompt FORA da criação da função conforme orientação do prof
+        Number(prompt('Qual sua idade?')), //prompts na mesma ordem das variáveis criadas na função ()
+        prompt('Você já estuda em uma faculdade?') //estes valores serão passados como parâmetro para a função
+    )
+);    */
+
+// exemp adicionais do prof
+function calculaArea(base,altura) {
+    return base*altura; //return serve para 
+    
+}
+function calculaAreaTotal(valores=[]) { //este parâmetro 'valores' é diferente de 'valores' da próxima função
+  var resultado=valores[0]+valores[1]+valores[2]+valores[3] ;
+  return resultado;
+}
+
+function CalcularValores(valores=[]) {
+  valores[0]=Number(valores[0]);
+  valores[1]=Number(valores[1]);
+
+
+var areaCalculada=calculaArea(valores[0],valores[1]);
+var areaTotal=calculaAreaTotal([areaCalculada,areaCalculada,areaCalculada,areaCalculada]);
+return areaTotal
+}
+function pegaValores() {
+  return CalcularValores([prompt('Digite a base')  ,
+  prompt('Digite a altura')])
+}
+console.log(pegaValores())
 
 //AULA 8 EX COMPLEMENTAR 1 CALCULADORA SIMPLES
 /* function calculadora (){
@@ -440,9 +517,9 @@ console.log("O maior número é:", maiorNumero(numeros)); // Saída: O maior nú
 for(let numero of numeros){console.log(numero)} */
 
 //aula 9 ex 2
-var array=['Olá','amigo,','como','você','está?']
+/* var array=['Olá','amigo,','como','você','está?']
 //for(let mens of array){console.log(mens)}
 for(let i=0;i<=array.length;i++){
     var pal=array[i]
     console.log(pal)
-}
+} */
