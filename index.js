@@ -337,7 +337,7 @@ console.log(podeDirigir(prompt("Digite seu nome"), prompt("digite sua idade")));
         }
         compara(); */
 //do prof:
-function compararNumeros(num1, num2) {
+/* function compararNumeros(num1, num2) {
     if (num1 > num2) {
       return `O primeiro número (${num1}) é maior que o segundo número (${num2}).`;
     } else if (num1 < num2) {
@@ -348,8 +348,8 @@ function compararNumeros(num1, num2) {
   }
     const num1 = prompt("Digite o primeiro número:");
     const num2 = prompt("Digite o segundo número:");
-    const resultado = compararNumeros(num1, num2);
-        alert(resultado);
+    const resultado = compararNumeros(num1, num2); //a const vai ser a frase resultante da função
+        alert(resultado); */ //alert-comando que vai exibir o resultado (em vez de console.log)
 
 //aula 8 ex 4 (switch case) (ficou = vers prof)
 /* var pokemon=prompt('DIGITE O NOME DE UM POKEMON: Bulbasauro, Charmander ou Squirtle, PARA SABER O SEU TIPO:')
@@ -449,6 +449,68 @@ function pegaValores() {
   prompt('Digite a altura')])
 }
 console.log(pegaValores()) */
+
+
+//AULA LÓGICA DE PROGRAMAÇÃO
+//EXERCÍCIOS E ATIVIDADES
+//ETAPA 1
+//1.EXERCÍCIO MENTAL (ALGORITMO SIMPLES)
+/*
+FAZER UMA SALADA:
+abrir a geladeira
+pegar os ingredientes desejados
+fechar a geladeira
+abrir a torneira da pia
+lavar cada ingrediente
+colocar o ingrediente lavado em uma tábua de corte
+fechar a torneira da pia
+cortar cada ingrediente
+colocar os ingredientes cortados em um prato
+temperar os ingredientes com sal
+adicionar azeite sobre a salada
+comer a salada
+
+
+
+*/
+//2.ESCREVA UM CÓDIGO (MÉDIA DE 3 NÚMEROS)
+/* function calcularMedia(){
+    var num1=prompt('Digite o 1º número') 
+    num1=Number(num1);
+    var num2=prompt('Digite o 2º número') 
+    num2=Number(num2);
+    var num3=prompt('Digite o 3º número') 
+    num3=Number(num3);
+    var numeros=[num1,num2,num3]
+    media=(numeros[0]+numeros[1]+numeros[2])/numeros.length
+
+    console.log('A média dos números é ',media)
+}
+calcularMedia(); */
+//outra forma MELHOR! (com o prompt fora da função, assim a função só executa o cálculo)
+function calcularMedia(num1,num2,num3){
+    var numeros=[num1,num2,num3]
+    media=(numeros[0]+numeros[1]+numeros[2])/numeros.length
+    return 'A média dos números é ',media
+}
+console.log(calcularMedia(
+    Number(prompt('Digite o 1º número')),
+    //num1=Number(num1)
+    Number(prompt('Digite o 2º número')),
+    //num2=Number(num2)
+    Number(prompt('Digite o 3º número'))
+    //num3=Number(num3)
+    ));
+
+
+//3.EXPLIQUE O CÓDIGO 
+/* numero = int(input("Digite um número: ")) //cria a variável numero que recebe um valor digitado pelo usuário
+if numero % 2 == 0:                       //testa se o resto da divisaõ do numero por 2 é=0 (se é par)
+print("O número é par.")                  //se for par imprime "O número é par."
+else:                                     //caso contrário...
+print("O número é ímpar.")   */              //... imprime "O número é ímpar."
+
+
 
 //AULA 8 EX COMPLEMENTAR 1 CALCULADORA SIMPLES
 /* function calculadora (){
@@ -568,4 +630,3 @@ for(let i=0;i<=array.length;i++){
     console.log(pal)
 } */
 
-//ver linhas 351-2 (aula 8 ex 3 do prof) o q é alert???????????????????????????????????????????????????????????????
