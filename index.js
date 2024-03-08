@@ -5,19 +5,24 @@ var frase="A cor favorita de " + nome + " é " + cor + "."
 console.log (frase);*/
 
 //aula 5 ex 2
-/*var frase2=prompt("Escreva uma frase");
+/* var frase2=prompt("Escreva uma frase");
 console.log(frase2); //=escreva do portugol
 const fraseMaiuscula = frase2.toUpperCase(); //console.log(frase2.toUpperCase()) [outra forma]
 console.log(fraseMaiuscula);
 const fraseI = fraseMaiuscula.replaceAll("O","I"); //console.log(frase2.replaceAll("O","I"))
 console.log(fraseI);
-console.log(fraseI.length);*/
+console.log(fraseI.length); */
+//a5e2 do prof (usou sempre a mesma varável)
+/* var frase2 = prompt("Escreva uma frase");
+console.log(frase2.toUpperCase());
+console.log(frase2.replaceAll("o", "i"));
+console.log(frase2.length); */
 
 /*const listaDeCompras = ["Abacate","Banana","Tomate"]
 const segundoItem = listaDeCompras[2] // "Tomate"
 */
 
-//aula 5 ex 2
+//aula 5 ex 3
 /*var i=prompt("Escolha uma raça entre 0 e 4");
 const racaCao=["0-Caramelo", "1-Golden", "2-Dálmata", "3-Doberman", "4-Pinsher"];
 var racaEscol=racaCao[i];
@@ -29,6 +34,7 @@ console.log(cach[escol]);*/
 // do prof 2:
 /*var cach=["r1", "r2", "r3","r4", "r5"];
 console.log(cach[prompt("digite de 0 a 4")]);*/
+
 
 /*var array=["a","b","c","d","e","f","g","h"];
 //          0   1   2   3   4   5   6   7
@@ -98,6 +104,13 @@ console.log(calculaArea(2,3));*/
 }
 const numSomados=calcSoma(0,0);
 console.log(calcSoma(4,5));*/
+//do prof
+/* function somaDoisNumeros(numa, numb){
+    return numa + numb;
+}
+var resultado = somaDoisNumeros(3, 5);
+console.log(resultado); */
+
 
 //aula 6 ex 4
 //teste 1 sem função funcionou
@@ -263,6 +276,7 @@ function novaPessoa()
         }
 novaPessoa() */
 
+
 //aula 8 (EM CASA)--------------------------------------------------------------------
 //aula 8 ex 1
 /* function compara (num1,num2){
@@ -273,17 +287,33 @@ if(num1!==num2){console.log('OS NÚMEROS SÃO DIFERENTES!')};
 console.log(num1, 'e', num2) 
 }
 compara(); */
+//do prof
+/* function comparaDoisNumeros (num, num2){
+    if(num === num2){console.log("sucesso");}
+}
+comparaDoisNumeros(prompt("Digite num 1"), prompt("Digite num 2")); */
+
 
 //aula 8 ex1.1
 /* function cnh (){
         var nome=prompt("Digite seu nome");
     var idade=prompt("Digite sua idade");  
     if(idade>=18){console.log(nome,', você PODE dirigir')};
-    if(idade<18){console.log(nome,', você NÃO pode dirigir!')};
+    if(idade<18){console.log(nome,', você NÃO pode dirigir!')}; //aqui coloquei o console.log dentro da função
     
 }
 cnh()  */
-//chame a função dentro de um console.log ...???
+//chame a função dentro de um console.log ...??? ver ex do prof a seguir
+//do prof
+/* function podeDirigir(nome, idade){
+    if(idade >= 18){
+        return `${nome}, voce pode dirigir`;
+    }
+}
+
+console.log(podeDirigir(prompt("Digite seu nome"), prompt("digite sua idade")));//função dentro do console.log
+//                     "...passe como parâmetros as informações que foram inseridas pelo usuário através do prompt
+ */
 
 //aula 8 ex 2
 /* function compara (num1,num2){
@@ -306,6 +336,20 @@ cnh()  */
         console.log(num1, 'e', num2) 
         }
         compara(); */
+//do prof:
+function compararNumeros(num1, num2) {
+    if (num1 > num2) {
+      return `O primeiro número (${num1}) é maior que o segundo número (${num2}).`;
+    } else if (num1 < num2) {
+      return `O primeiro número (${num1}) é menor que o segundo número (${num2}).`;
+    } else {
+      return `Os dois números são iguais: ${num1}.`;
+    }
+  }
+    const num1 = prompt("Digite o primeiro número:");
+    const num2 = prompt("Digite o segundo número:");
+    const resultado = compararNumeros(num1, num2);
+        alert(resultado);
 
 //aula 8 ex 4 (switch case) (ficou = vers prof)
 /* var pokemon=prompt('DIGITE O NOME DE UM POKEMON: Bulbasauro, Charmander ou Squirtle, PARA SABER O SEU TIPO:')
@@ -382,7 +426,7 @@ console.log(
 );    */
 
 // exemp adicionais do prof
-function calculaArea(base,altura) {
+/* function calculaArea(base,altura) {
     return base*altura; //return serve para 
     
 }
@@ -404,7 +448,7 @@ function pegaValores() {
   return CalcularValores([prompt('Digite a base')  ,
   prompt('Digite a altura')])
 }
-console.log(pegaValores())
+console.log(pegaValores()) */
 
 //AULA 8 EX COMPLEMENTAR 1 CALCULADORA SIMPLES
 /* function calculadora (){
@@ -523,3 +567,5 @@ for(let i=0;i<=array.length;i++){
     var pal=array[i]
     console.log(pal)
 } */
+
+//ver linhas 351-2 (aula 8 ex 3 do prof) o q é alert???????????????????????????????????????????????????????????????
