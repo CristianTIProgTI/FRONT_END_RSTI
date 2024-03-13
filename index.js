@@ -683,9 +683,20 @@ calcularMedia(); */
 verifPalin()  */
 
 
-//aula 9 ex 1 NÃO CONSEGUI!!!!!!!!!!!!----------------------------------------------------------------------------
+//aula 9 ----------------------------------------------------------------------------
+//exemplo 1 
+/* var i=0
+while (i<10){console.log(i);i++} */
+
+//exemplo 2
+/* var estomago =0
+while (estomago<100){console.log('Quero comer mais coxinhas');
+estomago=estomago+10;} */
+
+//aula 9 ex 1 1a tentativa-NÃO CONSEGUI!!!!!!!!!!!!
 /* var num=1
 var soma=0
+var num1=0
 while (num!==0) {
     num=prompt('Digite um número');
     num1=Number(num);
@@ -694,28 +705,127 @@ while (num!==0) {
 console.log(num1);
 console.log(soma) ; */
 
+//aula 9 ex 1 2a tentativa com função-NÃO CONSEGUI!!!!!!!!!!!!
+/* var num=1
+var soma=0
+var num1=0
+function soma0 (num){
+while (num!==0) {
+    num=prompt('Digite um número');
+    num1=Number(num);
+    soma=soma+num1;
+    return soma
+};
+}
+//console.log(soma0(prompt('Digite um número diferente de zero')))
+
+//console.log(num1);
+console.log(soma0()) ; */
+
+//aula 9 ex 1 3a tentativa com ChatGPT
+/* let soma = 0;
+let numero;
+
+console.log("Insira vários números. Digite '0' para finalizar e calcular a soma.");
+
+// Loop para solicitar números e calcular a soma
+while (true) {
+    numero = parseInt(prompt("Insira um número:"));
+
+    // Verifica se o número digitado é 0 para parar o loop
+    if (numero === 0) {
+        break;
+    }
+
+    // Adiciona o número à soma
+    soma += numero;
+}
+
+console.log("A soma de todos os números indicados é:", soma); */
+
+//aula 9 ex 1 do prof 1
+/* function somarNumeros () {
+    let soma=0;
+    let numero=1;
+    while (numero!==0){
+        numero=Number(prompt('Digite um número (ou zero para sair): '));
+        soma+=numero;
+    }
+    console.log(`A soma dos números digitados é: ${soma}`);
+}
+somarNumeros() */
+
+//aula 9 ex 1 3a tentativa, adapatando a do prof
+/* function soma0 (){
+var num=1;
+var soma=0;
+//var num1=0
+while (num!==0) {
+    num=Number(prompt('Digite um número diferente de zero para somar ou zero para concluir'));
+    //num1=Number(num);
+    soma=soma+num;
+    //return soma
+};
+console.log(`A soma é ${soma}`);
+}
+soma0() ; */
+
 //for
+/* for(let i=0; i<10; i++){
+    console.log(i)
+} */
+
+
 /* const numeros=[14,67,89,15,23]
-for (let i=0;i<5;i++){
+for (let i=0;i<numeros.length;i++){
     const elemento=numeros[i]
     console.log(elemento)
 } */
 
-//AULA 9 EX 2 também não funcionou!?--------------
-/* const array=[11,15,18,14,12,13]
+//AULA 9 EX 2 não funcionou!, retorna zero!?--------------
+
 //var i=0
 //var numAt=0
-function DevMaiorNum(array)
+/* function DevMaiorNum()
 {
-    let maiorNum=0
+    let array=[11,15,18,14,12,13];
+    let maiorNum=0;
+    var i=0
+    let numAt=array[i];
     for(let i=0;i<=array.lenght;i++)
         {
-        let numAt=array[i]
-        if(numAt>=maiorNum) {maiorNum=numAt}
-        }
-console.log(`O maior número do array é ${maiorNum}`)
+            //let maiorNum=0;
+        if(numAt>=maiorNum) {maiorNum=numAt} 
+        };
+console.log(`O maior número do array é ${maiorNum}`);
 }
-DevMaiorNum(array) */
+DevMaiorNum(); */
+
+//AULA 9 EX 2 do prof (incompleto ainda...)
+/* function valorMaior (array){
+    var numeroMaior=array[0];
+    for (let index=0; index<array.lenght;index++){
+        const element=array[index];
+        if(element>numeroMaior){numeroMaior=element}
+    }
+    return numeroMaior;
+}
+console.log(valorMaior()); */
+
+//ditado prog prof
+/* function somarNumerosComArray(){
+    var numeros =[];
+    var numero =1;
+    
+while (numero!==0) {
+    numero=Number(prompt('Digite um número ou 0 pra sair')) ;
+    numeros.push(numero);
+}
+var soma=numeros.reduce((acumulador,numero)=>acumulador+numero,0);
+return soma;
+}
+console.log(somarNumerosComArray()); */
+
 
 //aula 9 ex 2 usando ChatGPT
 /* function maiorNumero(array) {
