@@ -451,9 +451,9 @@ function pegaValores() {
 console.log(pegaValores()) */
 
 
-//AULA LÓGICA DE PROGRAMAÇÃO
+//AULA LÓGICA DE PROGRAMAÇÃO \/____\/_____\/_________________________________________________________________________________
 //EXERCÍCIOS E ATIVIDADES
-//ETAPA 1
+//ETAPA 1: Introdução à Lógica de Programação
 //1.EXERCÍCIO MENTAL (ALGORITMO SIMPLES)
 /*
 FAZER UMA SALADA:
@@ -469,12 +469,10 @@ colocar os ingredientes cortados em um prato
 temperar os ingredientes com sal
 adicionar azeite sobre a salada
 comer a salada
-
-
-
 */
+
 //2.ESCREVA UM CÓDIGO (MÉDIA DE 3 NÚMEROS)
-/* function calcularMedia(){
+/*  function calcularMedia(){
     var num1=prompt('Digite o 1º número') 
     num1=Number(num1);
     var num2=prompt('Digite o 2º número') 
@@ -486,22 +484,20 @@ comer a salada
 
     console.log('A média dos números é ',media)
 }
-calcularMedia(); */
+calcularMedia();*/
+
 //outra forma MELHOR! (com o prompt fora da função, assim a função só executa o cálculo)
-function calcularMedia(num1,num2,num3){
+/* function calcularMedia(num1,num2,num3){
     var numeros=[num1,num2,num3]
     media=(numeros[0]+numeros[1]+numeros[2])/numeros.length
-    return 'A média dos números é ',media
+    return `A média dos números é ${media}`
 }
 console.log(calcularMedia(
     Number(prompt('Digite o 1º número')),
-    //num1=Number(num1)
     Number(prompt('Digite o 2º número')),
-    //num2=Number(num2)
     Number(prompt('Digite o 3º número'))
-    //num3=Number(num3)
-    ));
-
+    )); */
+ 
 
 //3.EXPLIQUE O CÓDIGO 
 /* numero = int(input("Digite um número: ")) //cria a variável numero que recebe um valor digitado pelo usuário
@@ -510,6 +506,129 @@ print("O número é par.")                  //se for par imprime "O número é p
 else:                                     //caso contrário...
 print("O número é ímpar.")   */              //... imprime "O número é ímpar."
 
+//ETAPA 2: Estruturas de Controle
+//1.EXERCÍCIO MENTAL (Explicação diferença for e while)
+/*o while repete um trecho de código {} enquanto uma condição for verdadeira (), quando a condição se tornar falsa o loop se encerrará.
+O while é usado quando não se sabe quantas vezes precisa repetir uma ação e se deseja repeti-la enquanto uma condição específica for verdadeira.
+No while, primeiramente é determinada a condição (Ex (i<=1000)) e depois são determinados os comandos {} a serem executados enquanto a condição for verdadeira 
+
+O for tem um comportamento parecido mas é mais utilizado para procedimentos muito repetitivos, normalmente envolvendo contagens, ele possui uma sintaxe mais simplificada também;
+Usar o for quando se sabe o número de vezes que se deseja repetir uma ação
+No for, primeiramente são determinados os seguintes 3 itens:
+o valor inicial do loop (Ex i=0);
+o valor final do loop (Ex i=1000); e
+o incremento do valores do loop (Ex i=i+10).
+Depois é determinado um comando a ser executado (Ex {console.log(i)})
+*/
+
+//2.ESCREVA UM CÓDIGO (CONTAGEM 1 A 10 COM for)
+/* for (var i=1; i<=10; i++) {console.log(i)} */
+
+//3.EXPLIQUE O CÓDIGO 
+/* contador = 0                    //a variável contador inicia em zero
+while contador < 5:             //enquanto a variáver for menor que 5
+print("Contador:", contador)    //será impresso a mensagem 'Contador:' e a variável...
+contador += 1  */                  //...que terá um incremento de 1, ou seja, o contador vai de 0 a 4 (por exemplo: Contador: 1)
+
+//Etapa 3: Estruturas de Dados
+//1.EXERCÍCIO MENTAL (MATRIZ)
+/*
+tabelas de preços
+listas de dados de funcionários
+listas de tarefas com observações, datas, etc
+listas de contatos
+produtos e preços
+ingredientes e quantidades
+tabelas em geral
+*/
+
+//2.ESCREVA UM CÓDIGO (IMPRIME MAIOR NÚMERO)
+//2.1 ChatGPT
+/* function encontrarMaiorNumero() 
+{
+    var numeros = []; // Array para armazenar os números fornecidos pelo usuário
+
+    // Pedir ao usuário para inserir os números
+    for (var i = 0; i < 3; i++) {
+        var numero = parseFloat(prompt("Insira o " + (i + 1) + "º número:"));
+        numeros.push(numero); // Adiciona o número ao array
+    }
+
+    // Encontrar o maior número
+    var maiorNumero = numeros[0]; // Assume que o primeiro número é o maior
+    for (var j = 1; j < numeros.length; j++) {
+        if (numeros[j] > maiorNumero) {
+            maiorNumero = numeros[j];
+        }
+    }
+
+    // Retornar o maior número
+    return maiorNumero;
+}
+// Chamar a função e exibir o resultado
+var resultado = encontrarMaiorNumero();
+console.log("O maior número é: " + resultado); */
+
+//2.2 copiando exemplo do prof de portugol e adaptando ao js
+/* var n=3
+var i=0
+var numeros=[]
+var maior=0
+for(i = 1; i <= n; i++) //faz o prompt e armazena o número no array números
+    {
+    var numero =Number(prompt(`Digite o  ${i}  º número: `));
+    numeros.push(numero);
+    }
+  
+  for(i = 0; i <= n; i++) //descobre o maior número
+    {
+     if(numeros[i] > maior){maior = numeros[i]}
+    }
+console.log('O maior número é', maior) */ //exibe o maior número
+
+
+//3.EXPLIQUE O CÓDIGO
+/* matriz = [                      //criação da matriz
+    [1, 2, 3],                  //linha 0 com 3 colunas
+    [4, 5, 6],                  //linha 1 com 3 colunas
+    [7, 8, 9]                   //linha 2 com 3 colunas
+    ]                           //fim da matriz
+    for linha in matriz:        //para cada linha da matriz...
+    for elemento in linha:      //...e cada elemento da linha...
+    print(elemento, end=' ')    //...será impresso a variável elemento e um espaço em branco ' '
+    print()  */                    //???
+
+
+//Etapa 4: Funções e Modularização
+//1.EXERCÍCIO MENTAL (FUNÇÃO-SITUAÇÕES)
+/*
+situações repetitivaas
+procedimentos que devam ser repetidos novamente mais adiante no sistema
+para facilitar a organização de uma programação
+para repetir cálculos
+*/
+
+//2.ESCREVA UM CÓDIGO (SOMA)
+ /* function calcularSoma(num1,num2){
+    var numeros=[num1,num2]
+    soma=(numeros[0]+numeros[1])
+    return `A soma dos números é ${soma}`
+}
+console.log(calcularSoma(
+    Number(prompt('Digite o 1º número')),
+    Number(prompt('Digite o 2º número')),
+    )); */
+ 
+
+//3.EXPLIQUE O CÓDIGO 
+/* def fatorial(n):            //é criada a função fatorial com a variável n
+if n == 0:                  //se n for igual a zero... 
+return 1                    //...retornará 1
+else:                       //caso contrário...
+return n * fatorial(n - 1) */  //retornará n*(n-1), por exemplo 5*(5-1), o resultado (20) será o novo valor de n e a operação será reiniciada (20*(4-1)) até chegar em zero
+//é isso mesmo ou acontecerá (20*(20-1))???
+
+//FIM DA AULA LÓGICA DE PROGRAMAÇÃO ^^^^^^__________________________________________________________________________________________
 
 
 //AULA 8 EX COMPLEMENTAR 1 CALCULADORA SIMPLES
@@ -629,4 +748,3 @@ for(let i=0;i<=array.length;i++){
     var pal=array[i]
     console.log(pal)
 } */
-
