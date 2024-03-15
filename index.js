@@ -784,15 +784,18 @@ for (let i=0;i<numeros.length;i++){
 
 //AULA 9 EX 2 não funcionou!, retorna zero!?--------------
 
-//var i=0
-//var numAt=0
-/* function DevMaiorNum()
+/* let array=[11,15,18,14,12,13];
+    //let maiorNum=0;
+    //var i=0
+    //let numAt=array[i];
+function DevMaiorNum()
 {
-    let array=[11,15,18,14,12,13];
+    //let array=[11,15,18,14,12,13];
+    let numAt=array[i];
     let maiorNum=0;
     var i=0
-    let numAt=array[i];
-    for(let i=0;i<=array.lenght;i++)
+    
+    for( i=0;i<array.lenght;i++)
         {
             //let maiorNum=0;
         if(numAt>=maiorNum) {maiorNum=numAt} 
@@ -801,16 +804,19 @@ console.log(`O maior número do array é ${maiorNum}`);
 }
 DevMaiorNum(); */
 
-//AULA 9 EX 2 do prof (incompleto ainda...)
-/* function valorMaior (array){
-    var numeroMaior=array[0];
-    for (let index=0; index<array.lenght;index++){
-        const element=array[index];
-        if(element>numeroMaior){numeroMaior=element}
+//AULA 9 EX 2 do prof 
+/* function valorMaior(array){
+    var numeroMaior = array[0];
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        if(element > numeroMaior){
+            numeroMaior = element
+        }
     }
     return numeroMaior;
 }
-console.log(valorMaior()); */
+var meuArray = [10,20,30,50,80,1,99,4,60]
+console.log(valorMaior(meuArray)); */
 
 //ditado prog prof
 /* function somarNumerosComArray(){
